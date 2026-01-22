@@ -142,6 +142,7 @@ numpy==1.26.3
     #   opt-einsum
     #   optax
     #   orbax-checkpoint
+    #   pipeline-dp
     #   scipy
     #   tensorboard
     #   tensorflow
@@ -157,9 +158,11 @@ optax==0.1.9
     # via flax
 orbax-checkpoint==0.4.4
     # via flax
-packaging==22.0
-    # via tensorflow
-pipeline-dp
+packaging==26.0
+    # via
+    #   tensorflow
+    #   wheel
+pipeline-dp==0.2.1
     # via -r requirements.in
 portpicker==1.6.0
     # via google-vizier
@@ -178,14 +181,16 @@ pyasn1==0.5.1
     # via
     #   pyasn1-modules
     #   rsa
-python-dp
-    # via -r requirements.in
 pyasn1-modules==0.3.0
     # via google-auth
 pygments==2.17.2
     # via rich
 pysqlite3==0.5.2
     # via -r requirements.in
+python-dp==1.1.5rc4
+    # via
+    #   -r requirements.in
+    #   pipeline-dp
 pyyaml==6.0.1
     # via
     #   flax
@@ -207,6 +212,7 @@ scipy==1.11.4
     #   jax
     #   jaxlib
     #   jaxopt
+    #   pipeline-dp
 six==1.16.0
     # via
     #   absl-py
@@ -257,7 +263,7 @@ urllib3==1.26.18
     #   requests
 werkzeug==3.0.1
     # via tensorboard
-wheel==0.42.0
+wheel==0.46.2
     # via astunparse
 wrapt==1.14.1
     # via tensorflow
@@ -267,4 +273,4 @@ zipp==3.17.0
     #   importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:
-setuptools~=69.0.3
+# setuptools
